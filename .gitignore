@@ -16,7 +16,8 @@ config.json
 *.tmp  
 *.swp  
 *.swo  
-*.lock  
+*.lock
+*.meta
 
 # Ignore IDE/editor settings  
 .vscode/  
