@@ -1,7 +1,8 @@
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Combat/AttackData")]
-public class AttackData : ScriptableObject{
+public class AttackData : ScriptableObject
+{
     public string moveName;
     public AttackType attackType;
     public ElementType elementType;

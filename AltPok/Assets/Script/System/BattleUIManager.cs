@@ -1,19 +1,23 @@
 using UnityEngine;
 
-public class BattleUIManager : MonoBehaviour{
+public class BattleUIManager : MonoBehaviour
+{
     public HealthBarUI playerHealthBarUI;
     public HealthBarUI enemyHealthBarUI;
 
-    public static BattleUIManager Instance { 
-        get; private set; 
+    public static BattleUIManager Instance
+    {
+        get; private set;
     }
 
-    void Awake(){
+    void Awake()
+    {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
     }
 
-    public void RegisterCreature(Health health, bool isEnemy){
+    public void RegisterCreature(Health health, bool isEnemy)
+    {
         if (isEnemy)
             SetEnemyTarget(health);
         else
@@ -21,12 +25,13 @@ public class BattleUIManager : MonoBehaviour{
     }
 
 
-    public void SetPlayerTarget(Health health){
+    public void SetPlayerTarget(Health health)
+    {
         playerHealthBarUI.SetTarget(health);
     }
 
-    public void SetEnemyTarget(Health health){
+    public void SetEnemyTarget(Health health)
+    {
         enemyHealthBarUI.SetTarget(health);
     }
-
 }

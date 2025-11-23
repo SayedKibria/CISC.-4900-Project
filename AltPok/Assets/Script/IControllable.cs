@@ -1,4 +1,5 @@
-public interface IControllable{
+public interface IControllable
+{
     void EnableControl();
     void DisableControl();
 }

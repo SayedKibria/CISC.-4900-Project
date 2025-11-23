@@ -1,4 +1,5 @@
-public enum ElementType{
+public enum ElementType
+{
     Normal,
     Fire,
     Water,

@@ -1,4 +1,5 @@
-public enum AttackType{
+public enum AttackType
+{
     Melee,
     Ranged
 }
